@@ -1,3 +1,7 @@
 
 apply plugin: 'java'
 
+dependencies {
+    compile files("./3rdparty/commons-lang3-3.5.jar")
+}
+

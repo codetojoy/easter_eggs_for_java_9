@@ -4,7 +4,7 @@
 # utils.jar is brought in as automatic module
 javac -d build/modules \
 --module-source-path src \
---module-path utils/build/libs \
+--module-path utils/build/libs:utils/3rdparty \
 `find src -name "*.java"`
 
 jar --create --file=lib/net.codetojoy.db@1.0.jar \
