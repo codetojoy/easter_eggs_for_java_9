@@ -5,7 +5,7 @@ module net.codetojoy.service {
     requires net.codetojoy.db;
     requires java.rmi;
 
-    requires commonslang;
+    requires commons.lang;
     requires utils;
 }
 
