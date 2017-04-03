@@ -10,6 +10,6 @@ jar --create --file=lib/net.codetojoy.db@1.0.jar \
 
 jar --create --file=lib/net.codetojoy.service@1.0.jar \
 --module-version=1.0 \
---main-class=net.codetojoy.service.impl.UserService \
+--main-class=net.codetojoy.service.api.UserService \
 -C build/modules/net.codetojoy.service . 
 
