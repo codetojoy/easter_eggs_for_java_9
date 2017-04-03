@@ -1,5 +1,5 @@
 
-mkdir -p build/modules/net.codetojoy
+./clean.sh
 
 javac -d build/modules/net.codetojoy \
 src/net.codetojoy/module-info.java \
