@@ -17,9 +17,9 @@ install:
 - find . -name "*.sh" -exec chmod u+x {} \;
 - echo "------------------ egg_Basic_Dependency"
 - cd egg_Basic_Dependency
-- ./compile.sh`
-- ./list_net.codetojoy.db.sh`
-- ./list_net.codetojoy.service.sh`
-- ./run_UserDao.sh`
-- ./run_UserService.sh`
+- ./compile.sh
+- ./list_net.codetojoy.db.sh
+- ./list_net.codetojoy.service.sh
+- ./run_UserDao.sh
+- ./run_UserService.sh
 
