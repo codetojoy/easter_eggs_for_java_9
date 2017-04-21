@@ -15,9 +15,15 @@ addons:
 
 install:
 - find . -name "*.sh" -exec chmod u+x {} \;
+- echo "------------------ egg_Basic_Trivial"
+- cd egg_Basic_Trivial
+- ./compile.sh
+- ./run.sh
 - echo "------------------ egg_Basic_Dependency"
-- cd egg_Basic_Dependency
+- cd ../egg_Basic_Dependency
+# list commands don't work for some reason 
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- cd ..
 
