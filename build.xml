@@ -1,0 +1,5 @@
+<project>
+<target name="test">
+    <echo message="no-op" />
+</target>
+</project>
