@@ -25,6 +25,12 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_Open_Module"
+- cd ../egg_Open_Module
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_UserDao.sh
+- ./run_UserServices.sh
 - echo "------------------ egg_Services"
 - cd ../egg_Services
 # list commands don't work for some reason 
