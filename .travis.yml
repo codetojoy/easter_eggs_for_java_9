@@ -54,7 +54,7 @@ install:
 - ./compile.sh
 - ./link.sh
 - ./serviceapp/bin/java --list-modules
-- ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl-
+- ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl
 
 - cd ..
 
