@@ -30,12 +30,18 @@ install:
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_UserDao.sh
-- ./run_UserServices.sh
+- ./run_UserService.sh
 - echo "------------------ egg_Services"
 - cd ../egg_Services
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_Dao.sh
+- echo "------------------ egg_Transitive_Export"
+- cd ../egg_Transitive_Export
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_UserDao.sh
+- ./run_UserService.sh
 
 - cd ..
 
