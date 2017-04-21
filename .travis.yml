@@ -42,6 +42,12 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_Unnamed_Module_Classpath_Driver"
+- cd ../egg_Unnamed_Module_Classpath_Driver
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_UserDao.sh
+- ./run_UserService.sh
 
 - cd ..
 
