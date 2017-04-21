@@ -25,5 +25,11 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_Services"
+- cd ../egg_Services
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_Dao.sh
+
 - cd ..
 
