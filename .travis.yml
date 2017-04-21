@@ -48,6 +48,13 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_JLink"
+- cd ../egg_JLink
+# list commands don't work for some reason 
+- ./compile.sh
+- ./link.sh
+- ./serviceapp/bin/java --list-modules
+- ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl-
 
 - cd ..
 
