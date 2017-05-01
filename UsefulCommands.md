@@ -12,3 +12,7 @@
 
 * `jdeps --list-deps antlr.jar`
 * `jdeps --generate-module-info . antlr.jar` (in theory)
+
+#### jar
+
+* `jar --file abc.jar --print-module-descriptor`
