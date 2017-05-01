@@ -6,6 +6,7 @@
 
 * `java --list-modules` to list all modules
 * `java --list-modules java.sql` to describe a module
+* `java -Xdiag:resolver --module-path ... ` for readability graph 
 
 #### jdeps
 
