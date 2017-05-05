@@ -1,6 +1,5 @@
 
-### transitive
+### open module
 
-* add `java.util.logging.Logger` to UserService
-* edit `net.codetojoy.db` module so that `requires transitive java.sql`
-* i.e. db module grants access to logging via sql
+* `net.codetojoy.db` module is open
+* `net.codetojoy.service.impl.UserServiceImpl` cannot compile with `UserDaoImpl` but it can use reflection
