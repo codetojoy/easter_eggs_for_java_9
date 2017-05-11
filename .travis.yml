@@ -14,7 +14,6 @@ addons:
       - oracle-java9-installer
 
 install:
-- java -version
 - find . -name "*.sh" -exec chmod u+x {} \;
 - echo "------------------ egg_Basic_Trivial"
 - cd egg_01_Basic_Trivial
@@ -24,8 +23,6 @@ install:
 - cd ../egg_02_Basic_Dependency
 # list commands don't work for some reason 
 - ./compile.sh
-- ./list.net.codetojoy.db.sh
-- ./list.net.codetojoy.service.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
 - echo "------------------ egg_Open_Module"
