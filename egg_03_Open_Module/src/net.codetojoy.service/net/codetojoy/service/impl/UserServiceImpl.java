@@ -12,12 +12,13 @@ public class UserServiceImpl {
     private UserDao userDao = null;
     private Logger logger = null;
 
+    @SuppressWarnings("unchecked")
     public void init() {
        String className = "net.codetojoy.db.impl.UserDaoImpl";
 
        try {
            Class c = Class.forName(className);
-           Object myUserDao = c.newInstance();
+           Object myUserDao = c.getConstructor().newInstance(); 
            System.out.println("TRACER created this: " + myUserDao);
        } catch (Exception e) {
            System.err.println("caught exception: " + e.getMessage());
