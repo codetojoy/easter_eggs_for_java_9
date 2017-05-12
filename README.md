@@ -10,3 +10,4 @@
     * confirmed 05-MAY-2017 with b167 via sdkman
     * confirmed 05-MAY-2017 with b168 via Docker automenta/javai image
         * set JAVA_HOME for jlink
+    * confirmed 12-MAY-2017 with b169 via Docker automenta/javai image
