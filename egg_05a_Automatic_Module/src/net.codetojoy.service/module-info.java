@@ -5,6 +5,7 @@ module net.codetojoy.service {
     requires net.codetojoy.db;
     requires java.rmi;
 
-    requires commons.lang3;
+    requires commons.lang;
+    // this works in b168: requires commons.lang3;
 }
 
