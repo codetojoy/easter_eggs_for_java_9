@@ -25,6 +25,12 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_03_Transitive_Export"
+- cd ../egg_03_Transitive_Export
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_UserDao.sh
+- ./run_UserService.sh
 - echo "------------------ egg_03_Open_Module"
 - cd ../egg_03_Open_Module
 # list commands don't work for some reason 
@@ -36,12 +42,6 @@ install:
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_Dao.sh
-- echo "------------------ egg_05_Transitive_Export"
-- cd ../egg_05_Transitive_Export
-# list commands don't work for some reason 
-- ./compile.sh
-- ./run_UserDao.sh
-- ./run_UserService.sh
 - echo "------------------ egg_06_Unnamed_Module_Classpath_Driver"
 - cd ../egg_06_Unnamed_Module_Classpath_Driver
 # list commands don't work for some reason 
