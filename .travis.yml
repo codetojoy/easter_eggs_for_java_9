@@ -37,6 +37,12 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
+- echo "------------------ egg_05a_Automatic_Module"
+- cd ../egg_05a_Automatic_Module
+# list commands don't work for some reason 
+- ./compile.sh
+- ./run_UserDao.sh
+- ./run_UserService.sh
 - echo "------------------ egg_06_Services"
 - cd ../egg_06_Services
 # list commands don't work for some reason 
