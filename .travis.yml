@@ -31,14 +31,14 @@ install:
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
-- echo "------------------ egg_03_Open_Module"
-- cd ../egg_03_Open_Module
+- echo "------------------ egg_04_Open_Module"
+- cd ../egg_04_Open_Module
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
-- echo "------------------ egg_04_Services"
-- cd ../egg_04_Services
+- echo "------------------ egg_06_Services"
+- cd ../egg_06_Services
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_Dao.sh
