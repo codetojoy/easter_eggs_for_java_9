@@ -1,7 +1,7 @@
 
 rm -rf build
-rm -rf lib
+rm -rf mlib
 
 mkdir -p build/modules
-mkdir -p lib
+mkdir -p mlib
 
