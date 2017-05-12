@@ -1,5 +1,4 @@
 
-
 ### automatic module
 
 * `utils` subproject builds `utils/build/libs/utils.jar`
