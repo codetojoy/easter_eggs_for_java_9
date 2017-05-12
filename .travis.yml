@@ -42,21 +42,21 @@ install:
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_Dao.sh
-- echo "------------------ egg_06_Unnamed_Module_Classpath_Driver"
-- cd ../egg_06_Unnamed_Module_Classpath_Driver
+- echo "------------------ egg_07_Unnamed_Module_Classpath_Driver"
+- cd ../egg_07_Unnamed_Module_Classpath_Driver
 # list commands don't work for some reason 
 - ./compile.sh
 - ./run_UserDao.sh
 - ./run_UserService.sh
-- echo "------------------ egg_JLink"
-- cd ../egg_JLink
+- echo "------------------ egg_20_JLink"
+- cd ../egg_20_JLink
 # list commands don't work for some reason 
 - ./compile.sh
 - ./link.sh
 - ./serviceapp/bin/java --list-modules
 - ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl
-- echo "------------------ egg_JLink_With_Converted_Jar"
-- cd ../egg_JLink_With_Converted_Jar
+- echo "------------------ egg_21_JLink_With_Converted_Jar"
+- cd ../egg_21_JLink_With_Converted_Jar
 - cd convert
 - ./gen.sh in/commons-lang3-3.5.jar
 - ./build.sh in/commons-lang3-3.5.jar commons.lang
