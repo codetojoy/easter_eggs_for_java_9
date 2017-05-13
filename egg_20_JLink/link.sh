@@ -1,4 +1,5 @@
 
+JAVA_HOME=$1
 echo "JAVA_HOME is ${JAVA_HOME}"
 
 rm -rf serviceapp 

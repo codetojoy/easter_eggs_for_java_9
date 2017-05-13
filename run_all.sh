@@ -6,8 +6,17 @@ trap "TRACER error: " ERR
 
 if [ "$JAVA_HOME" = "" ]
 then
-   echo "please set JAVA_HOME"
-   exit -1
+    echo "looking for JAVA_HOME as arg"
+    if [ "$1" = "" ]
+    then
+        echo "usage: run_all.sh java_home_path (e.g. /j/jdk9)"
+        exit -1
+    else
+        JAVA_HOME=$1
+        stat $JAVA_HOME/bin/java 
+        stat $JAVA_HOME/jmods
+        echo "OK"
+    fi
 fi
 
 echo "------------------ egg_01_Basic_Trivial"
@@ -67,7 +76,7 @@ cd ../egg_20_JLink
 ./compile.sh
 ./list_net.codetojoy.db.sh
 ./list_net.codetojoy.service.sh
-./link.sh
+./link.sh $JAVA_HOME
 ./serviceapp/bin/java --list-modules
 ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl
 

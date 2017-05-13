@@ -58,21 +58,25 @@ install:
 - cd ../egg_20_JLink
 # list commands don't work for some reason 
 - ./compile.sh
-- ./link.sh
+- ./link.sh $JAVA_HOME
 - ./serviceapp/bin/java --list-modules
 - ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl
-- echo "------------------ egg_21_JLink_With_Converted_Jar"
-- cd ../egg_21_JLink_With_Converted_Jar
-- cd convert
-- ./gen.sh in/commons-lang3-3.5.jar
-- ./build.sh in/commons-lang3-3.5.jar commons.lang
-- jdeps --list-deps out/commons.lang.jar
-- cd ..
-- ./clean.sh
-- ./build.sh
-- ./run_foo_app.sh
-- ./link.sh
-- ./foo.runtime/bin/java --list-modules
-- ./foo.runtime/bin/java --module foo.app
+#
+# there is a difference between b162 and b168+ so wait until Travis CI
+# updates the version on the image
+#
+# - echo "------------------ egg_21_JLink_With_Converted_Jar"
+# - cd ../egg_21_JLink_With_Converted_Jar
+# - cd convert
+# - ./gen.sh in/commons-lang3-3.5.jar
+# - ./build.sh in/commons-lang3-3.5.jar commons.lang
+# - jdeps --list-deps out/commons.lang.jar
+# - cd ..
+# - ./clean.sh
+# - ./build.sh
+# - ./run_foo_app.sh
+# - ./link.sh
+# - ./foo.runtime/bin/java --list-modules
+# - ./foo.runtime/bin/java --module foo.app
 
 - cd ..
