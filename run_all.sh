@@ -80,7 +80,24 @@ cd ../egg_20_JLink
 ./serviceapp/bin/java --list-modules
 ./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl
 
-# echo "------------------ egg_21_JLink_With_Converted_Jar"
+echo "------------------ egg_21_JLink_With_Converted_Jar"
+cd ../egg_21_JLink_With_Converted_Jar
+cd convert
+./gen.sh in/commons-lang3-3.5.jar
+./build.sh in/commons-lang3-3.5.jar commons.lang3
+jdeps --list-deps out/commons.lang.jar
+cd ..
+./clean.sh
+./build.sh
+./run_foo_app.sh
+./link.sh $JAVA_HOME
+./foo.runtime/bin/java --list-modules
+./foo.runtime/bin/java --module foo.app
+
+cd ..
+echo "Ready."
+
+
 # cd ../egg_21_JLink_With_Converted_Jar
 # cd convert
 # ./gen.sh in/commons-lang3-3.5.jar

@@ -1,6 +1,6 @@
 
 module foo.domain {
-    requires commons.lang;
+    requires commons.lang3;
 
     exports net.codetojoy.domain;
 }

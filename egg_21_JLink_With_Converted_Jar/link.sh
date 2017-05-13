@@ -3,6 +3,7 @@ rm -rf foo.runtime
 MJARS=convert/out
 MLIB=mlib
 
+JAVA_HOME=$1
 echo "JAVA_HOME is ${JAVA_HOME}"
 
 jlink \
