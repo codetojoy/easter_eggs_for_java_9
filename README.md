@@ -8,6 +8,7 @@
 * see README.md in each folder for steps to execute
 
 ### validation log
+* confirmed 01-JUN-2017 with b171 via Travis-CI
 * confirmed 12-MAY-2017 with b169 via Docker automenta/javai [image](https://hub.docker.com/r/automenta/javai/)
     * set JAVA_HOME for jlink
 * confirmed 05-MAY-2017 with b168 via Docker automenta/javai [image](https://hub.docker.com/r/automenta/javai/)
