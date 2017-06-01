@@ -14,6 +14,7 @@
     * set JAVA_HOME for jlink
 * confirmed 05-MAY-2017 with b167 via sdkman
 * confirmed 03-APR-2017 with b161
+* build tickle here: 01-JUN-2017
 
 ### Setup for Docker
 
