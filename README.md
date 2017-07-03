@@ -18,19 +18,19 @@
 * confirmed 03-APR-2017 with b161
 * build tickle here: 01-JUN-2017
 
-### Setup for Docker
+### Setup for Docker (optional)
 
 * These instructions work for Mac OS X. Tweak as appropriate
-* Install Docker from [here](https://www.docker.com/) 
 * Open 'Docker Quick Start Terminal'
 
 * set `MY_SRC_HOME` to be appropriate directory on your computer where this repo is located
-* execute the following (one command at a time):
+* steps:
 
 <pre>
 docker pull automenta/javai:latest
 cd $MY_SRC_HOME
 docker run --rm -t -i -v $(pwd):/data automenta/javai bash
 export JAVA_HOME=/j/jdk9/bin
+java --version
 cd /data
 </pre>
