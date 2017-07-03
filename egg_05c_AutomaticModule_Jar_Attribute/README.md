@@ -3,13 +3,13 @@
 
 * `utils` subproject builds `utils/build/libs/utils.jar`
 * `utils.jar` is not modularized, but rather put on the module-path as an automatic module
-    * it uses the `Automatic-Module-Name` attribute in jar manifest to define `net.codetojoy.utils`
+    * it uses the `Automatic-Module-Name` attribute in jar manifest to define `net.codetojoy.utils`. See Gradle file [here](https://github.com/codetojoy/easter_eggs_for_java_9/blob/master/egg_05c_AutomaticModule_Jar_Attribute/utils/build.gradle)
 * `utils.jar` depends on `commons-lang3-3.5.jar` which remains on the classpath
 * see `src/net.codetojoy.service/module-info.java` [here](https://github.com/codetojoy/easter_eggs_for_java_9/blob/master/egg_05c_AutomaticModule_Jar_Attribute/src/net.codetojoy.service/module-info.java)
 
 ### Execution Steps
 
-* outside of Docker, with Gradle installed:
+* outside of Docker, with Gradle installed (this does not require JDK 9):
     * `cd utils` then `gradle build`
 
 * in Docker container:
