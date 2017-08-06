@@ -7,8 +7,8 @@
 
 * This creates a modular jar, `lib/net.codetojoy.example.jar`
 * The jar contains `net.codetojoy/example/resources/640px-Baden.Beethoven01.jpg`
-* The module exports `net.codetojoy/example/resources`
-* `App.java` uses the module and attempts to load the image. It works because the package is exported.
+* The module opens `net.codetojoy/example/resources`
+* `App.java` uses the module and attempts to load the image. It works because the package is opened.
 
 ### Layout
 

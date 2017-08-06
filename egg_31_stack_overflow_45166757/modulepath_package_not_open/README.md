@@ -7,8 +7,8 @@
 
 * This creates a modular jar, `lib/net.codetojoy.example.jar`
 * The jar contains `net.codetojoy/example/resources/640px-Baden.Beethoven01.jpg`
-* The module does *not* export `net.codetojoy/example/resources`
-* `App.java` uses the module and attempts to load the image. It *fails* because the package is exported.
+* The module does *not* open `net.codetojoy/example/resources`
+* `App.java` uses the module and attempts to load the image. It *fails* because the package is not opened. i.e. strong encapsulation is protecting the resource
 
 ### Layout
 
