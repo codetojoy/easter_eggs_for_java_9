@@ -5,7 +5,7 @@
 * these example illustrate loading a resource in 3 contexts:
     * `classpath` : a client using a plain-old jar on the classpath (succeeds)
     * `modulepath_package_open` : a client using a modular jar where the resource package is opened ([view here](https://github.com/codetojoy/easter_eggs_for_java_9/blob/master/egg_31_stack_overflow_45166757/modulepath_package_open/src/net.codetojoy.example/module-info.java)). This succeeds because of the export.
-    * `modulepath_package_not_opened` : a client using a modular jar where the resource package is not opened ([view here](https://github.com/codetojoy/easter_eggs_for_java_9/blob/master/egg_31_stack_overflow_45166757/modulepath_package_not_opened/src/net.codetojoy.example/module-info.java)). The load attempt fails, because strong encapsulation protects the resource.
+    * `modulepath_package_not_opened` : a client using a modular jar where the resource package is not opened ([view here](https://github.com/codetojoy/easter_eggs_for_java_9/blob/master/egg_31_stack_overflow_45166757/modulepath_package_not_open/src/net.codetojoy.example/module-info.java)). The load attempt fails, because strong encapsulation protects the resource.
 
 ### To Run
 
