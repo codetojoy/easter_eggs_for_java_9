@@ -6,9 +6,15 @@
 
 ### Execution Steps
 
-* `./compile.sh`
-* (optional) `list_net.codetojoy.db.sh`
-* (optional) `list_net.codetojoy.service.sh`
-* `link.sh`
-* (optional) `./serviceapp/bin/java --list-modules`
-* `./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl`
+* to build:
+    * `./compile.sh`
+* to link:
+    * `./link.sh $JAVA_HOME`
+* view size of runtime:
+    * `du -m serviceapp`
+* to run:
+    * `./serviceapp/bin/java net.codetojoy.service.impl.UserServiceImpl`
+* optional:
+    * `list_net.codetojoy.db.sh`
+    * `list_net.codetojoy.service.sh`
+    * `./serviceapp/bin/java --list-modules`
