@@ -5,7 +5,7 @@
 * these example illustrate loading a resource in 3 contexts:
     * `classpath` : a client using a plain-old jar on the classpath (succeeds)
     * `modulepath_export` : a client using a modular jar where the resource package is exported (succeeds)
-    * `module_no_export` : a client using a modular jar where the resource package is not exported (fails, because strong encapsulation protects the resource)
+    * `modulepath_no_export` : a client using a modular jar where the resource package is not exported (fails, because strong encapsulation protects the resource)
 
 ### To Run
 
