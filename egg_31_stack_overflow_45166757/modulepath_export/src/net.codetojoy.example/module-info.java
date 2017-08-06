@@ -1,5 +1,6 @@
 
 module net.codetojoy.example {
     exports net.codetojoy.example;
-    exports net.codetojoy.example.resources;
+
+    opens net.codetojoy.example.resources;
 }

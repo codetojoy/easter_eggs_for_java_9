@@ -19,7 +19,6 @@ public class App {
 
     public static void main(String[] args) {
         try {
-            Composer composer = new Composer("Beethoven", "Romantic");
             InputStream inputStream = getResourceAsStream(RESOURCE);
 
             if (inputStream != null) {
