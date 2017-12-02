@@ -21,9 +21,8 @@
 * to build:
     * on host machine (i.e. Mac OS): `./compile.sh`
 * to link:
-    * on host machine (i.e. Mac OS): `./link.sh`
-    * NOTE: if you view this script, it points to the Linux 64 JDK
-    * The resulting binary will not run on Mac OS!
+    * on host machine (i.e. Mac OS). Edit the JDK version as appropriate: `./link.sh ./jdk9_linux_64/jdk-9.0.1`
+    * NOTE: the above points to Linux 64 JDK; the resulting binary will not run on Mac OS!
 * view size of runtime:
     * in Docker terminal (i.e. Ubuntu): `./list.sh`
 * to run in Docker container:

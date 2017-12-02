@@ -1,5 +1,6 @@
 
-JAVA_HOME=./jdk9_linux_64/jdk-9.0.1
+# ./jdk9_linux_64/jdk-9.0.1
+JAVA_HOME=$1 
 echo "JAVA_HOME is ${JAVA_HOME}"
 
 rm -rf serviceapp 
