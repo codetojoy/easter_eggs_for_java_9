@@ -3,7 +3,7 @@
 
 * answer to [this question](https://stackoverflow.com/questions/47727869) on Stack Overflow
 
-### Convert jackson jars to a module
+### Convert jackson legacy jars to modular jars
 
 * `./run.sh`
 * modular jars are in `~/module`
