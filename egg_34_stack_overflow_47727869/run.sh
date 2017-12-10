@@ -1,8 +1,9 @@
 #!/bin/bash
 
-rm -rf work 
-rm -rf modules
-mkdir work modules
+rm -rf work modules 
+mkdir work modules 
+
+ROOT_DIR=$PWD
 
 JACKSON_ANNOTATIONS_JAR=jars/jackson-annotations-2.8.10.jar
 JACKSON_ANNOTATIONS=jackson.annotations
@@ -23,10 +24,8 @@ jdeps --generate-module-info work $JACKSON_CORE_JAR
 
 JARPATH=$JACKSON_CORE_JAR
 MOD=$JACKSON_CORE
-ROOT_DIR=$PWD
 
 # copy original jar into place
-mkdir -p $ROOT_DIR/modules
 cp $ROOT_DIR/$JARPATH $ROOT_DIR/modules/$MOD.jar
 
 # extract original jar
@@ -54,10 +53,8 @@ jdeps --generate-module-info work $JACKSON_ANNOTATIONS_JAR
 
 JARPATH=$JACKSON_ANNOTATIONS_JAR
 MOD=$JACKSON_ANNOTATIONS
-ROOT_DIR=$PWD
 
 # copy original jar into place
-mkdir -p $ROOT_DIR/modules
 cp $ROOT_DIR/$JARPATH $ROOT_DIR/modules/$MOD.jar
 
 # extract original jar
@@ -85,10 +82,8 @@ jdeps --module-path $PWD/modules --add-modules jackson.annotations,jackson.core 
 
 JARPATH=$JACKSON_DATABIND_JAR
 MOD=$JACKSON_DATABIND
-ROOT_DIR=$PWD
 
 # copy original jar into place
-mkdir -p $ROOT_DIR/modules
 cp $ROOT_DIR/$JARPATH $ROOT_DIR/modules/$MOD.jar
 
 # extract original jar
