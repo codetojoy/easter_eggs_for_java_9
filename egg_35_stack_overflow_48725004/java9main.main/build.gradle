@@ -1,0 +1,20 @@
+
+apply plugin: 'application'
+
+mainClassName = 'com.thoughtblaze.java9.main.Main'
+ext.moduleName = 'java9main.main'
+
+dependencies {
+    compile project (':java8')
+}
+
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+              '--module-path', classpath.asPath,
+        ]
+        classpath = files()
+    }
+}
+

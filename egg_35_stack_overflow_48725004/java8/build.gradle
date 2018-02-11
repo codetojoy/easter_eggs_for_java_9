@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+ext.moduleName = 'java8module.main'
+
+jar {
+    inputs.property("moduleName", moduleName)
+    manifest {
+        attributes('Automatic-Module-Name': moduleName)
+    }
+}
+
