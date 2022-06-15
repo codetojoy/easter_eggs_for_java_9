@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/codetojoy/easter_eggs_for_java_9.svg?branch=master)](https://travis-ci.org/codetojoy/easter_eggs_for_java_9)
-
 ### Eggs for Java 9 Modules
 
 * some basic examples for Java 9 modules 
